@@ -6,8 +6,9 @@
   "author": "rofiqurrohman93@gmail.com",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue ./",
-    "test": "echo \"No test specified\" && exit 0"
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "build:pwa": "quasar build -m pwa"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -15,7 +16,8 @@
     "core-js": "^3.6.5",
     "leaflet": "^1.9.3",
     "quasar": "^1.0.0",
-    "vue2-leaflet": "^2.7.1"
+    "vue2-leaflet": "^2.7.1",
+    "vue2-leaflet-moving-rotated-marker": "^0.0.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
@@ -41,5 +43,9 @@
     "node": ">= 10.18.1",
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
   }
 }

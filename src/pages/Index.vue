@@ -1,15 +1,16 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+  <div>
+    <Maps />
+  </div>
 </template>
 
 <script>
+import Maps from 'src/components/Maps.vue';
+import Maps2 from 'src/components/Maps2.vue';
+
 export default {
   name: 'PageIndex',
+  // eslint-disable-next-line vue/no-unused-components
+  components: { Maps, Maps2 },
 };
 </script>
